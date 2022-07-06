@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Movis&TV </title>
+    <link rel="shortcut icon" href="img/top-movies/top-movies.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- ********  Start Loader Section -->
+    <div class="loader-bg" id="loader-bg">
+        <div class="loader-wrapper" id="loader-1">
+            <div id="loader"></div>
+        </div>
+    </div>
+    <!-- ******** End  Loader Section -->
+    <!-- Start Navbar Section --------------------------------------------------------  -->
+    <section class="sec-navbar" id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-lg-2 col-md-12 col-sm-12 col-12">
+                    <a class="navbar-brand " href="#"><span>RS</span>Movies <i class="bi bi-star-fill" ></i></a>
+                </div>
+                <div class="col-lg-10 col-md-12  col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-6 col-6">
+                            <nav class="navbar navbar-expand-lg">
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-main" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                          </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown-main">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="index.html"> <span>|</span>Home<span>|</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><span>|</span>Movies<span>|</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><span>|</span>Shows<span>|</span></a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span>|</span>List<span>|</span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">my list</a></li>
+                                                <li><a class="dropdown-item" href="#">Renewable movies</a></li>
+                                                <li><a class="dropdown-item" href="#">Propiced movies</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="user-setting">
+                                <div class="icons search-icon" id="search-btn"><i class="bi bi-search" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search"></i></div>
+                                <div class="icons notification-icon" id="notification-btn"><i class="bi bi-bell" data-bs-toggle="tooltip" data-bs-placement="bottom" title="notification"></i></div>
+                                <div class="icons setting-icon"><i class="bi bi-gear" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Setting"></i></div>
+                                <div class="icons" id="profile-form-btn"><i class="bi bi-person" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <!-- Search-form  -->
+                <div class="search col-lg-8  col-md-8 col-sm-8 col-10 " id="search">
+                    <div class="input-group"><input type="text" class="form-control  border-0 small" placeholder="Search for...">
+                        <button class="btn btn-primary" type="button"> <i class="bi bi-search fa-sm"></i> </button>
+                    </div>
+                </div>
+                <!-- notifaction-form  -->
+                <div class="notification">
+                    <div class="notif-card">
+                        <div class="notif-img">
+                            <img src="img/notification/01.jpg" alt="not-01">
+                        </div>
+                        <div class="notif-time">
+                            <h5>iron door</h5>
+                            <p><i class="bi bi-clock"></i> 1 min ago</p>
+                        </div>
+                    </div>
+                    <div class="notif-card">
+                        <div class="notif-img">
+                            <img src="img/notification/02.jpg" alt="not-02">
+                        </div>
+                        <div class="notif-time">
+                            <h5>iron door</h5>
+                            <p><i class="bi bi-clock"></i> 3 min ago</p>
+                        </div>
+                    </div>
+                    <div class="notif-card">
+                        <div class="notif-img">
+                            <img src="img/notification/03.jpg" alt="not-03">
+                        </div>
+                        <div class="notif-time">
+                            <h5>iron door</h5>
+                            <p><i class="bi bi-clock"></i> 10 min ago</p>
+                        </div>
+                    </div>
+                    <button>show all</button>
+                </div>
+                <!-- profile-form  -->
+                <div class="profile-form">
+                    <ul class="p-2 m-0">
+                        <li>
+                            <a href="#"><i class="bi bi-person"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-credit-card"></i>pricing plane</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-box-arrow-right"></i>logout</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Home Section --------------------------------------------------------  -->
+    <section class="sec-carousel ">
+        <div class="container-fluid">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel-main/slider1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="new-content">
+                                <a href="#" class="btn-new"> New</a>
+                                <h2>iron door</h2>
+                                <p> 2022 <span>Action</span> 2h 6m </p>
+                                <div class="details">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laudantium labore! Repellendus inventore voluptatum libero</p>
+
+                                </div>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel-main/slider2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="new-content">
+                                <a href="#" class="btn-new"> New</a>
+                                <h2>the earth</h2>
+                                <p> 2022 <span>Actin</span> 2h 6m</p>
+                                <div class="details">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laudantium labore! Repellendus inventore voluptatum libero </p>
+
+                                </div>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel-main/slider3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="new-content">
+                                <a href="#" class="btn-new"> New</a>
+                                <h2>city dreams</h2>
+                                <p> 2022 <span>Actin</span> 2h 6m </p>
+                                <div class="details">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laudantium labore! Repellendus inventore voluptatum libero </p>
+
+                                </div>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Chat --------------------------------------------------------  -->
+    <div class="chat-icon " id="chat-form-btn">
+        <i class="bi bi-chat-dots"></i>
+    </div>
+    <div class="up-icon" id="upIcon-btn">
+        <a href="#">
+            <i class="bi bi-arrow-up"></i></a>
+    </div>
+    <div class="chat-form" id="chat-form">
+        <div class="row ">
+            <div class="livechat">
+                <i class="bi bi-three-dots" data-bs-toggle="tooltip" data-bs-placement="bottom" title="options"></i>
+                <h5>Welcome to liveChat</h5>
+                <i class="bi bi-dash-lg" id="chat-form-hid-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="minimize window"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content">
+                <p>welcome to sales chat! please fill in the form below before starting the chat.</p>
+                <form>
+                    <div class="input-chat">
+                        <label>name:</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="input-chat">
+                        <label>E-mail:</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="input-chat start-chat">
+                        <input type="submit" name="submit" value="Start the Chat">
+                    </div>
+
+                </form>
+                <div class="row">
+                    <div class="live-chat-process">
+                        <p>powered by</p>
+                        <i class="bi bi-chat-left"></i>
+                        <p>LiveChat</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Start Feathers Section --------------------------------------------------------  -->
+    <section class="sec-feathers sec-feathers-content section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-list">
+                        <ul>
+                            <li><a href="#" class="btn-02">Featured</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">Shown</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/fethers-move/01.jpg" alt="move-1">
+                        </div>
+
+                        <h4>IRON DOOR</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/fethers-move/02.jpg" alt="move-2">
+                        </div>
+
+                        <h4>THE EARTH</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/fethers-move/03.jpg" alt="move-3">
+                        </div>
+                        <h4>CITY DREAMS</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/fethers-move/04.jpg" alt="move-4">
+                        </div>
+                        <h4>DIVINE HAND</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/fethers-move/05.jpg" alt="move-5">
+                        </div>
+                        <h4>DECEIVED</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/fethers-move/06.jpg" alt="move-6">
+                        </div>
+                        <h4>HEAVEN IS NOW</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Start Popular Moves Section --------------------------------------------------------  -->
+    <section class="sec-feathers sec-popular section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-title">
+                        <h2>Popular Movies</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="swiper-popular-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="feather-move-item">
+                                <img src="img/popular-movies/01.jpg" alt="move-1">
+                                <h4>the land fo fear</h4>
+                                <p> 2022 <span>Action</span></p>
+                                <div class="info-play">
+                                    <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-info"></i></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feather-move-item">
+                                <img src="img/popular-movies/02.jpg" alt="move-1">
+                                <h4>criminal</h4>
+                                <p> 2022 <span>Action</span></p>
+                                <div class="info-play">
+                                    <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-info"></i></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feather-move-item">
+                                <img src="img/popular-movies/03.jpg" alt="move-1">
+                                <h4>the thug</h4>
+                                <p> 2022 <span>Action</span></p>
+                                <div class="info-play">
+                                    <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-info"></i></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feather-move-item">
+                                <img src="img/popular-movies/04.jpg" alt="move-1">
+                                <h4>terrifying night</h4>
+                                <p> 2022 <span>Action</span></p>
+                                <div class="info-play">
+                                    <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-info"></i></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feather-move-item">
+                                <img src="img/popular-movies/05.jpg" alt="move-1">
+                                <h4>the winter</h4>
+                                <p> 2022 <span>Action</span></p>
+                                <div class="info-play">
+                                    <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-info"></i></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feather-move-item">
+                                <img src="img/popular-movies/06.jpg" alt="move-1">
+                                <h4>the fear</h4>
+                                <p> 2022 <span>Action</span></p>
+                                <div class="info-play">
+                                    <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-info"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide active">
+                            <div class="feather-move-item active">
+                                <img src="img/popular-movies/07.jpg" alt="move-1">
+                                <h4>the love</h4>
+                                <p> 2022 <span>Action</span></p>
+                                <div class="info-play">
+                                    <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                                    <div class="icons-play"> <i class="bi bi-info"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+
+    </section>
+    <!-- Start TOP 10 BOX Section --------------------------------------------------------  -->
+    <section class="sec-feathers sec-trend sec-top-movies section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-title">
+                        <h2>TOP 10 BOX OFFICE</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/top-movies/01.jpg" alt="move-top-1">
+                            <div class="content">
+                                <img src="img/top-movies/top-movies.png" alt="logo">
+                                <h2>romantic world</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. adipisci qui ut, obcaecati.que.</p>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/top-movies/02.jpg" alt="move-top-1">
+                            <div class="content">
+                                <img src="img/top-movies/top-movies.png" alt="logo">
+                                <h2>incantation</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. adipisci qui ut, obcaecati.que.</p>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/top-movies/03.jpg" alt="move-top-1">
+                            <div class="content">
+                                <img src="img/top-movies/top-movies.png" alt="logo">
+                                <h2>the years</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. adipisci qui ut, obcaecati.que.</p>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/top-movies/04.jpg" alt="move-top-1">
+                            <div class="content">
+                                <img src="img/top-movies/top-movies.png" alt="logo">
+                                <h2>the house</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. adipisci qui ut, obcaecati.que.</p>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/top-movies/05.jpg" alt="move-top-1">
+                            <div class="content">
+                                <img src="img/top-movies/top-movies.png" alt="logo">
+                                <h2>treason</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. adipisci qui ut, obcaecati.que.</p>
+                                <div class="btn-paly-list">
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-play-fill"></i> paly now</a></div>
+                                    <div class="hover-swep"><a href="" class="btn-01"><i class="bi bi-plus"></i> my list</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Start TREND Section --------------------------------------------------------  -->
+    <section class="sec-feathers sec-trend section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section-title">
+                        <h2>TRENDING NOW</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/trend/01.jpg" alt="move-1">
+                        </div>
+
+                        <h4>freedom</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/trend/02.jpg" alt="move-2">
+                        </div>
+                        <h4>THE world</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/trend/03.jpg" alt="move-3">
+                        </div>
+                        <h4>the gang</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/trend/04.jpg" alt="move-4">
+                        </div>
+                        <h4>world of war</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/trend/05.jpg" alt="move-5">
+                        </div>
+                        <h4>happy holiday</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/trend/06.jpg" alt="move-6">
+                        </div>
+                        <h4>weekend</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Best-series Section --------------------------------------------------------  -->
+    <section class="sec-feathers  section-best-series section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="best-series-inner">
+                    <div class="col">
+                        <div class="feather-move-item">
+                            <img src="img/best-series/03.jpg" alt="move-1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feather-move-item">
+                            <img src="img/best-series/04.jpg" alt="move-2">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feather-move-item">
+                            <img src="img/best-series/02.jpg" alt="move-3">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feather-move-item">
+                            <img src="img/best-series/04.jpg" alt="move-4">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feather-move-item">
+                            <img src="img/best-series/05.jpg" alt="move-5">
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="feather-move-item">
+                            <img src="img/best-series/06.jpg" alt="move-6">
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="overlay">
+                        <div class="content-menu">
+                            <h5 class="no-transform-title">featured</h5>
+                            <h1 class="no-transform-title">Best Series</h1>
+                            <p class="no-transform-title">News Season 5 Just flown in Watch and debate.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="section-list">
+                                        <ul class="no-transform-title">
+                                            <li><a href="# " class="btn-02 no-transform-title">Drama</a></li>
+                                            <li><a href="# " class="no-transform-title">Action</a></li>
+                                            <li><a href="# " class="no-transform-title">Romanace</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ************************************* -->
+    <section class="sec-feathers sec-best-ser-up-overly">
+        <div class="container">
+            <div class="row">
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/best-series/02.jpg" alt="move-1">
+                        </div>
+                        <h4>a happy life</h4>
+                        <p> 2022 <span>4 season</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/best-series/08.jpg" alt="move-2">
+                        </div>
+                        <h4>a mirage</h4>
+                        <p> 2022 <span>4 season</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/best-series/06.jpg" alt="move-3">
+                        </div>
+                        <h4>box</h4>
+                        <p> 2022 <span>4 season</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/best-series/09.jpg" alt="move-4">
+                        </div>
+                        <h4>the price</h4>
+                        <p> 2022 <span>4 season</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/best-series/10.jpg" alt="move-5">
+                        </div>
+                        <h4>sans</h4>
+                        <p> 2022 <span>4 season</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/best-series/11.jpg" alt="move-6">
+                        </div>
+                        <h4>the sky</h4>
+                        <p> 2022 <span class="no-transform">4 season</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Suggest TREND Section --------------------------------------------------------  -->
+    <section class="sec-feathers sec-suggest section-padding ">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>SUGGESTED FOR YOU</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/suggest/01.jpg" alt="move-1">
+                        </div>
+                        <h4>IRON DOOR</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/suggest/02.jpg" alt="move-2">
+                        </div>
+                        <h4>THE EARTH</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/suggest/03.jpg" alt="move-3">
+                        </div>
+                        <h4>CITY DREAMS</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/suggest/04.jpg" alt="move-4">
+                        </div>
+                        <h4>DIVINE HAND</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/suggest/05.jpg" alt="move-5">
+                        </div>
+                        <h4>DECEIVED</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feather-small-screen col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feather-move-item">
+                        <div class="image">
+                            <img src="img/suggest/06.jpg" alt="move-6">
+                        </div>
+                        <h4>HEAVEN IS NOW</h4>
+                        <p> 2022 <span>Action</span></p>
+                        <div class="info-play">
+                            <div class="icons-play"> <i class="bi bi-play-fill"></i></div>
+                            <div class="icons-play"> <i class="bi bi-plus"></i></div>
+                            <div class="icons-play"> <i class="bi bi-info"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Start --------------------------------------------->
+    <Section class="main-footer section-padding">
+        <div class="container">
+            <div class="row justify-content-center align-item-center">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class=" logo footer-about justify-content-center align-items-center">
+                        <a class="navbar-brand " href="#"><span>RS</span>Movies <i class="bi bi-star-fill" ></i></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellat.</p>
+                        <div class="footer-icons-contact">
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="footer-links">
+                        <h4>Display type</h4>
+                        <div class="link-item">
+                            <ul>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">Action</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">comedy</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">drama</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">horroe</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-4 col-12">
+                    <div class="footer-links">
+                        <h4>production</h4>
+                        <div class="link-item">
+                            <ul>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">2018 year</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">2019 year</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">2020 year</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">2022 year</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-4 col-12">
+                    <div class="footer-links">
+                        <h4>Display quality</h4>
+                        <div class="link-item">
+                            <ul>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">720 hd</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">720p bluroy</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">1080 bluroy</a></li>
+                                <li><i class="bi bi-arrow-right-short"></i><a href="#">1080p web-dl </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </Section>
+
+
+
+    <section class="privacy">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer-info">
+                    <p>© Copyright 2022, All Rights Reserved</p>
+                    <div class="footer-terms">
+                        <a href="#">Terms of services</a>
+                        <a href="#">privacy policy</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  -------------------------------- The End ------------------------>
+
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/swiper-bundle.min.js "></script> -->
+
+</body>
+
+</html>
